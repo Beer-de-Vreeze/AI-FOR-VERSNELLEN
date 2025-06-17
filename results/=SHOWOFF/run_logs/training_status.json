@@ -1,0 +1,51 @@
+{
+    "HunterController": {
+        "checkpoints": [
+            {
+                "steps": 11889,
+                "file_path": "results\\=SHOWOFF\\HunterController\\HunterController-11889.onnx",
+                "reward": -4.411764705882353,
+                "creation_time": 1741726456.2397735,
+                "auxillary_file_paths": [
+                    "results\\=SHOWOFF\\HunterController\\HunterController-11889.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 11889,
+            "file_path": "results\\=SHOWOFF\\HunterController.onnx",
+            "reward": -4.411764705882353,
+            "creation_time": 1741726456.2397735,
+            "auxillary_file_paths": [
+                "results\\=SHOWOFF\\HunterController\\HunterController-11889.pt"
+            ]
+        }
+    },
+    "AgentController": {
+        "checkpoints": [
+            {
+                "steps": 11889,
+                "file_path": "results\\=SHOWOFF\\AgentController\\AgentController-11889.onnx",
+                "reward": -6.470588235294118,
+                "creation_time": 1741726456.3022516,
+                "auxillary_file_paths": [
+                    "results\\=SHOWOFF\\AgentController\\AgentController-11889.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 11889,
+            "file_path": "results\\=SHOWOFF\\AgentController.onnx",
+            "reward": -6.470588235294118,
+            "creation_time": 1741726456.3022516,
+            "auxillary_file_paths": [
+                "results\\=SHOWOFF\\AgentController\\AgentController-11889.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.6.0+cu124"
+    }
+}

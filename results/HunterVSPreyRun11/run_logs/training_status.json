@@ -1,0 +1,69 @@
+{
+    "HunterController": {
+        "checkpoints": [
+            {
+                "steps": 499987,
+                "file_path": "results\\HunterVSPreyRun11\\HunterController\\HunterController-499987.onnx",
+                "reward": 5.056603773584905,
+                "creation_time": 1738878539.7694435,
+                "auxillary_file_paths": [
+                    "results\\HunterVSPreyRun11\\HunterController\\HunterController-499987.pt"
+                ]
+            },
+            {
+                "steps": 551833,
+                "file_path": "results\\HunterVSPreyRun11\\HunterController\\HunterController-551833.onnx",
+                "reward": 6.041666666666667,
+                "creation_time": 1738878647.3656085,
+                "auxillary_file_paths": [
+                    "results\\HunterVSPreyRun11\\HunterController\\HunterController-551833.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 551833,
+            "file_path": "results\\HunterVSPreyRun11\\HunterController.onnx",
+            "reward": 6.041666666666667,
+            "creation_time": 1738878647.3656085,
+            "auxillary_file_paths": [
+                "results\\HunterVSPreyRun11\\HunterController\\HunterController-551833.pt"
+            ]
+        }
+    },
+    "AgentController": {
+        "checkpoints": [
+            {
+                "steps": 499987,
+                "file_path": "results\\HunterVSPreyRun11\\AgentController\\AgentController-499987.onnx",
+                "reward": 42.85660377358491,
+                "creation_time": 1738878539.8506985,
+                "auxillary_file_paths": [
+                    "results\\HunterVSPreyRun11\\AgentController\\AgentController-499987.pt"
+                ]
+            },
+            {
+                "steps": 551833,
+                "file_path": "results\\HunterVSPreyRun11\\AgentController\\AgentController-551833.onnx",
+                "reward": 43.833333333333336,
+                "creation_time": 1738878647.448308,
+                "auxillary_file_paths": [
+                    "results\\HunterVSPreyRun11\\AgentController\\AgentController-551833.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 551833,
+            "file_path": "results\\HunterVSPreyRun11\\AgentController.onnx",
+            "reward": 43.833333333333336,
+            "creation_time": 1738878647.448308,
+            "auxillary_file_paths": [
+                "results\\HunterVSPreyRun11\\AgentController\\AgentController-551833.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.6.0+cu124"
+    }
+}

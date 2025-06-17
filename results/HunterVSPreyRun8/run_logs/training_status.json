@@ -1,0 +1,51 @@
+{
+    "AgentController": {
+        "checkpoints": [
+            {
+                "steps": 203915,
+                "file_path": "results\\HunterVSPreyRun8\\AgentController\\AgentController-203915.onnx",
+                "reward": 24.52173913043478,
+                "creation_time": 1738877386.9258986,
+                "auxillary_file_paths": [
+                    "results\\HunterVSPreyRun8\\AgentController\\AgentController-203915.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 203915,
+            "file_path": "results\\HunterVSPreyRun8\\AgentController.onnx",
+            "reward": 24.52173913043478,
+            "creation_time": 1738877386.9258986,
+            "auxillary_file_paths": [
+                "results\\HunterVSPreyRun8\\AgentController\\AgentController-203915.pt"
+            ]
+        }
+    },
+    "HunterController": {
+        "checkpoints": [
+            {
+                "steps": 203915,
+                "file_path": "results\\HunterVSPreyRun8\\HunterController\\HunterController-203915.onnx",
+                "reward": 1.1801242236024845,
+                "creation_time": 1738877386.9901555,
+                "auxillary_file_paths": [
+                    "results\\HunterVSPreyRun8\\HunterController\\HunterController-203915.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 203915,
+            "file_path": "results\\HunterVSPreyRun8\\HunterController.onnx",
+            "reward": 1.1801242236024845,
+            "creation_time": 1738877386.9901555,
+            "auxillary_file_paths": [
+                "results\\HunterVSPreyRun8\\HunterController\\HunterController-203915.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.6.0+cu124"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1738785758",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\beer\\Unity\\AI\\PelletGrabber\\MLvenv\\Scripts\\mlagents-learn --run-id =MoreMovementRun1",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.6.0+cpu",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1738785790"
+    },
+    "total": 32.52017549999999,
+    "count": 1,
+    "self": 0.0036917999999985796,
+    "children": {
+        "run_training.setup": {
+            "total": 0.025287700000000246,
+            "count": 1,
+            "self": 0.025287700000000246
+        },
+        "TrainerController.start_learning": {
+            "total": 32.491195999999995,
+            "count": 1,
+            "self": 0.0004949999999936949,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 32.490692100000004,
+                    "count": 1,
+                    "self": 32.490692100000004
+                },
+                "trainer_threads": {
+                    "total": 7.999999951380232e-07,
+                    "count": 1,
+                    "self": 7.999999951380232e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 8.100000002286833e-06,
+                    "count": 1,
+                    "self": 8.100000002286833e-06
+                }
+            }
+        }
+    }
+}

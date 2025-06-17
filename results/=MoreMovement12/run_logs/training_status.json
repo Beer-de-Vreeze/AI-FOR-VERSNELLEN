@@ -1,0 +1,29 @@
+{
+    "AgentController": {
+        "checkpoints": [
+            {
+                "steps": 1615,
+                "file_path": "results\\=MoreMovement12\\AgentController\\AgentController-1615.onnx",
+                "reward": 2.0,
+                "creation_time": 1738787050.3817291,
+                "auxillary_file_paths": [
+                    "results\\=MoreMovement12\\AgentController\\AgentController-1615.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1615,
+            "file_path": "results\\=MoreMovement12\\AgentController.onnx",
+            "reward": 2.0,
+            "creation_time": 1738787050.3817291,
+            "auxillary_file_paths": [
+                "results\\=MoreMovement12\\AgentController\\AgentController-1615.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.6.0+cpu"
+    }
+}

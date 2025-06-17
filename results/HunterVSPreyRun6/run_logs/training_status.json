@@ -1,0 +1,51 @@
+{
+    "HunterController": {
+        "checkpoints": [
+            {
+                "steps": 160350,
+                "file_path": "results\\HunterVSPreyRun6\\HunterController\\HunterController-160350.onnx",
+                "reward": null,
+                "creation_time": 1738876703.480098,
+                "auxillary_file_paths": [
+                    "results\\HunterVSPreyRun6\\HunterController\\HunterController-160350.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 160350,
+            "file_path": "results\\HunterVSPreyRun6\\HunterController.onnx",
+            "reward": null,
+            "creation_time": 1738876703.480098,
+            "auxillary_file_paths": [
+                "results\\HunterVSPreyRun6\\HunterController\\HunterController-160350.pt"
+            ]
+        }
+    },
+    "AgentController": {
+        "checkpoints": [
+            {
+                "steps": 160350,
+                "file_path": "results\\HunterVSPreyRun6\\AgentController\\AgentController-160350.onnx",
+                "reward": null,
+                "creation_time": 1738876703.5429785,
+                "auxillary_file_paths": [
+                    "results\\HunterVSPreyRun6\\AgentController\\AgentController-160350.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 160350,
+            "file_path": "results\\HunterVSPreyRun6\\AgentController.onnx",
+            "reward": null,
+            "creation_time": 1738876703.5429785,
+            "auxillary_file_paths": [
+                "results\\HunterVSPreyRun6\\AgentController\\AgentController-160350.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.6.0+cu124"
+    }
+}

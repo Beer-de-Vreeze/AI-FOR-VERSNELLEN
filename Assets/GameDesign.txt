@@ -1,0 +1,201 @@
+# Player
+
+### PlayerCount: 1
+
+### Role: Hero
+
+## Interactie: players tegen het spel door kaarten te spelen en tekenen
+
+# Doel
+
+## WinConditie: Versla de Dark Lord
+
+## Deel Doel: Schets en verzamel meer spells om de dark lord te verslaan
+
+## Level DeelDoel: Enemies verslaan verzamelen en schetsen tot je bij de dark lord komt. Geld verzamelen om nieuwe spells te kunnen krijgen
+
+## Condities: je moet goed je health,mana en gold managen. Als je 0 health hebt ga je dood,  je hebt mana nodig om spells te casten.  en gold nodig om dingen te kopen
+
+## Waarom: Dark lord de wereld ovegenomen en jij moet hem verslaan with the power of imagination to save the world
+
+# Regels
+
+### **Definiëren van objecten en omstandigheden**
+
+1. **Kamerindeling:**
+    - Elke kamer bevat een enemygroep, een schatkist of een shop.
+2. **Objecten in het spel:**
+    - **Potions:** Kunnen alleen in de inventory worden gedragen (maximaal 2 tegelijk).
+    - **Gold:** Kan alleen worden uitgegeven in shops, niet direct in gevechten.
+    - **Spells:** Kunnen alleen tijdens een gevecht worden gebruikt en vereisen voldoende mana.
+3. **Omstandigheden voor progressie:**
+    - Spelers mogen alleen verder naar de volgende kamer als alle enemies in de huidige kamer verslagen zijn.
+
+---
+
+### **Beperking van handelingen**
+
+1. **Shop interactie:**
+    - Spelers mogen alleen items kopen als ze voldoende gold hebben.
+    - Een item kan niet terugverkocht worden aan de shop.
+2. **Spells:**
+    - Spelers kunnen slechts een beperkt aantal spells in hun spellbook houden (5 spells).
+    - Elke spell heeft een specifieke mana-kost. Als je onvoldoende mana hebt, kan de spell niet worden gespeeld.
+3. **Veiligheid:**
+    - De speler mag geen potion gebruiken als zijn/haar gezondheid al maximaal is.
+
+---
+
+### **Procedures en resultaten**
+
+1. **Gevechtsregels:**
+    - Een karakter ontvangt schade afhankelijk van het type spell dat wordt gebruikt.
+    - Elke turn wordt een beurt genomen door de speler en vervolgens door de enemies gebaseerd op turn order.
+2. **Lootregels:**
+    - Na het verslaan van een enemy krijgt de speler een beloning in de vorm van gold of een nieuwe spell.
+    - Na het openen van een schatkist ontvangt de speler een willekeurige beloning, zoals een potion, gold of een spell.
+3. **Overhealth en damage:**
+    - Spells die overhealth geven stapelen niet boven een limiet (50% van de maximale health).
+    - Damage wordt altijd eerst van overhealth afgetrokken voordat het de basis health aantast.
+    - Na gevechten velies je je overhealth.
+
+## Beperkingen
+
+Turn-based combat waar je kan aanvallen maar kost mana voor spells. een actie per turn
+
+De winkel kost gold om spells te kopen.
+
+## Resultaat
+
+je cast een spell dat kost mana en dat damaged de enemy of healt the player
+
+Zwaard cost geen mana maar doet minder damage
+
+geeft gold uit om spullen te kopen.
+
+# Procedures
+
+## Welke Handelingen kunnen players verichten
+
+De player kan battlen , sketchen, spullen kopen in de shop, chests openen. 
+
+## Wanneer
+
+De player kan battlen tijden een gevecht. de player kan sketchen wanneer in de sketcher zit. spullen kopen waaneer ze in de shop zijn en chests openen wanneer er in gevonden is.
+
+## Controls
+
+Mouse/ left stick to move cursor
+
+left click/A(Controller) to interact(use skills, or select things in menus, etc)
+
+AI kan alleen battlen tegen de player tijden een gevecht in hun beurt
+
+De basic vijanden hebben een attack die ze altijd herhalen. de Dark lord heeft toegang tot alle spells die de player ooit gemaakt heeft dus daardoor iedere keer dat je speeld wordt het moeilijker.
+
+# Grondstoffen
+
+## Health
+
+de player heeft een bepaald aantal levens als die op zijn gaat hij dood
+
+## Mana
+
+de speler heeft mana die hij gebruikt om spells te casten elke spell heeft een andere cost dus als je te weinig mana hebt kun je hem niet casten
+
+## Gold
+
+Met gold speler dingen kopen in de shop als de speler genoeg gold heeft kan hij niks kopen
+
+## Potions
+
+Er zijn verschillende soorten potions die de player kan kopen in de shop en max 2 van kan hebben en kan ze gebruiken wanneer hij maar wil.
+
+## Artifact
+
+# Conflict
+
+## Tegenstanders
+
+verschillends enemies die ze zelf tekenen  
+
+## Dillema’s
+
+Welke spells en gear koop je voor je build ga je nu je gold gebruiken of later. Binnen gevecht brand ik nu door al mijn mana wil ik een grote spell casten.
+
+# Grenzen
+
+De game is linear je gaat door een dungeon van kamer naar kamer na een paar kamers is er een shop daarna worden de enemies sterker dit gaat zo door tot je bij de boss komt(Dark Lord). 
+
+# Resultaat
+
+je wint als je de Dark Lord verslaat  en dan kun je weer opnieuw beginnen als je dood gaat in je run start je weer aan het begin en kan je het opnieuw proberen. Aan het einde al je tekeningen die je gemaakt deze run worden altijd aan het einde gedisplayed
+
+# TDD
+
+## Enemies
+
+| **Enemy Name** | **Health** | **Damage** | Inititive bonus | **Attack** | **Description** |
+| --- | --- | --- | --- | --- | --- |
+| Small Monster | 10 HP | 8 | 0 | Quick Jab | A small, nimble creature |
+| Big Monster | 50 HP | 15 | -2 | Heavy Slam | A hulking creature, slow but strong, with powerful attacks. |
+| Flying Monster | 20 HP | 10 | 2 | Dive Bomb | A winged creature that strikes from above with speed and precision. |
+| Support Monster | 30 HP | 12 | 1 | Support/Attack | A creature supporting other creature’s  |
+| Dark Lord | 80 HP | Varies | 1.5 | Spellbound Fury | A powerful creature using the player's own spells, making the Dark Lord unpredictable. |
+
+## SpellBook
+
+![SpellBook Sketchin Spells - Copy-2025-01-08-211000.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0216a67a-859e-4730-996f-5d51b31fa395/865d2df5-c6b9-4e22-a08d-84db504f9682/SpellBook_Sketchin_Spells_-_Copy-2025-01-08-211000.png)
+
+## Inventory
+
+![Inventory Sketchin Spells-2025-01-08-210934.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0216a67a-859e-4730-996f-5d51b31fa395/70fc22ec-e0cd-4b64-84bc-483a23336668/Inventory_Sketchin_Spells-2025-01-08-210934.png)
+
+## PickUp
+
+![PickUp Sketchin Spells-2025-01-08-210816.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0216a67a-859e-4730-996f-5d51b31fa395/73442a3b-3ef6-4e96-9973-87391deb111e/PickUp_Sketchin_Spells-2025-01-08-210816.png)
+
+## Enemy
+
+![Enemy Sketchin Hero's-2025-01-08-210852.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0216a67a-859e-4730-996f-5d51b31fa395/4daae01a-b005-4324-a638-35fbf862387a/Enemy_Sketchin_Heros-2025-01-08-210852.png)
+
+# Spells
+
+| **Type** | **Rarity** | **Spell Name** | **Mana Cost** | **Description** |
+| --- | --- | --- | --- | --- |
+| **Fire** | Common | Fireball | 2 MP | Hurls a blazing orb at a single enemy, dealing moderate damage. |
+|  | Uncommon | Flame Wave | 3 MP | Releases a wave of flames, hitting all enemies in a small radius. |
+|  | Rare | Inferno | 5 MP | Summons an intense firestorm, dealing high damage to all enemies over time. |
+|  | Epic | Phoenix Blaze | 6 MP | Unleashes a phoenix, dealing massive damage to enemies and reviving the caster's health. |
+|  | Legendary | Dragon's Breath | 7 MP | Engulfs all enemies in fiery destruction, dealing extreme damage over time. |
+| **Ice** | Common | Frost Shard | 1 MP | Launches a sharp icicle at an enemy, dealing damage and reducing their speed. |
+|  | Uncommon | Ice Spike | 3 MP | Creates a row of ice spikes, damaging enemies in a straight line and slowing. |
+|  | Rare | Blizzard | 5 MP | Summons a snowstorm, damaging and potentially freezing all enemies. |
+|  | Epic | Glacial Prison | 6 MP | Traps an enemy in ice, stunning them and dealing damage over time. |
+|  | Legendary | Eternal Frost | 7 MP | Unleashes a devastating frost wave, freezing enemies and boosting defense. |
+| **Lightning** | Common | Spark | 1 MP | A quick jolt that hits an enemy and chains to nearby foes for minor damage. |
+|  | Uncommon | Thunderbolt | 4 MP | Summons a bolt of lightning, targeting one enemy for high damage. |
+|  | Rare | Chain Lightning | 5 MP | A surge of electricity strikes multiple enemies in succession. |
+|  | Epic | Stormcaller | 6 MP | Summons a storm cloud that damages random enemies each turn. |
+|  | Legendary | Heaven's Wrath | 8 MP | Calls down heavenly lightning, dealing massive damage and paralyzing enemies. |
+| **Earth** | Common | Rock Toss | 2 MP | Hurls a small boulder at an enemy, dealing light damage. |
+|  | Uncommon | Stonewall | 3 MP | Creates a protective wall, providing overhealth and reducing damage taken. |
+|  | Rare | Earthquake | 5 MP | Shakes the ground violently, damaging all enemies and potentially stunning. |
+|  | Epic | Boulder Crash | 6 MP | Drops a massive boulder on one target, dealing high damage and knocking back. |
+|  | Legendary | Gaia's Fury | 8 MP | Unleashes earth’s power, dealing massive damage to enemies and providing overhealth. |
+| **Dark Magic** | Common | Shadow Flicker | 2 MP | Sends a shadowy dart at an enemy, dealing damage  |
+|  | Uncommon | Dark Grasp | 4 MP | Dark tendrils immobilize an enemy, dealing damage and preventing actions. |
+|  | Rare | Abyssal Chains | 5 MP | Chains enemies, causing shared damage |
+|  | Epic | Void Pulse | 7 MP | Releases a dark energy pulse, damaging enemies and stealing their mana. |
+|  | Legendary | Soul Reaver | 8 MP | Drains life from all enemies, dealing massive damage and providing the caster with overhealth. |
+| **Support** | Common | Energize | 3 MP | Boosts an enemy’s mana regeneration for a few turns. |
+|  | Uncommon | Shield of Light | 4 MP | Creates a barrier around an enemy, providing overhealth for a few turns. |
+|  | Rare | Time Mend | 6 MP | Rewinds time to start teh battle over. |
+|  | Epic | Time Freeze | 7 MP | Freezes time for one turn, preventing all enemies from acting. |
+|  | Legendary | Divine Intervention | 8 MP | Restores full health to the caster and granting overhealth for a few turns. |
+
+Maybe spell interaction see if there is time
+
+# UML
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0216a67a-859e-4730-996f-5d51b31fa395/42e7c464-fba2-4968-9718-5c8e752a70ea/image.png)

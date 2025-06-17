@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1738792618",
+        "python_version": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\beer\\Unity\\AI\\PelletGrabber\\MLvenv\\Scripts\\mlagents-learn --run-id =GPUTest",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.6.0+cu124",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1738792632"
+    },
+    "total": 14.234326000000001,
+    "count": 1,
+    "self": 0.0046741000000007915,
+    "children": {
+        "run_training.setup": {
+            "total": 0.049764900000000445,
+            "count": 1,
+            "self": 0.049764900000000445
+        },
+        "TrainerController.start_learning": {
+            "total": 14.179886999999999,
+            "count": 1,
+            "self": 0.0004733999999935179,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 14.1794034,
+                    "count": 1,
+                    "self": 14.1794034
+                },
+                "trainer_threads": {
+                    "total": 8.000000022434506e-07,
+                    "count": 1,
+                    "self": 8.000000022434506e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 9.400000003267905e-06,
+                    "count": 1,
+                    "self": 9.400000003267905e-06
+                }
+            }
+        }
+    }
+}
